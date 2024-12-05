@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EletronicosAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8e12c22e24eb7e16983b968734fe83e67000ac3a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b8f4cfbdb7b0482bc307fd08300ef179291a100e")]
 [assembly: System.Reflection.AssemblyProductAttribute("EletronicosAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EletronicosAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,0 +1,14 @@
+@base_url = http://localhost:5005
+
+
+
+
+POST {{base_url}}/Api/eletronicos/cadastrar
+Content-Type: application/json
+
+{
+    "nome": "Televisão",
+    "valor": 2500,
+    "categoria": "Lazer"
+
+}
