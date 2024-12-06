@@ -5,7 +5,7 @@ namespace EletronicosAPI.models;
 public class AppDataContext : DbContext
 
 {
-    public DbSet<Eletronicos>? Eletronicos {get; set;}
+    public DbSet<Eletronicos> Eletronicos {get; set;} = null!;
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {

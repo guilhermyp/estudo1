@@ -6,9 +6,35 @@
 POST {{base_url}}/Api/eletronicos/cadastrar
 Content-Type: application/json
 
+
+{
+    "nome": "Geladeira",
+    "valor": 3500,
+    "categoria":"Eletrodomesticos"
+}
+
+###
+
+GET {{base_url}}/Api/eletronicos/listar
+
+####
+
+PUT {{base_url}}/Api/eletronicos/editar/1
+Content-Type: application/json
+
 {
     "nome": "Televisão",
-    "valor": 2500,
-    "categoria": "Lazer"
-
+    "valor": 2800.75,
+    "categoria": "Eletrônicos"
 }
+
+####
+
+DELETE {{base_url}}/Api/eletronicos/excluir/2
+
+####
+
+
+GET {{base_url}}/Api/eletronicos/buscarPorCategoria/Lazer
+
+

@@ -18,16 +18,19 @@ namespace EletronicosAPI.Migrations
 
             modelBuilder.Entity("EletronicosAPI.models.Eletronicos", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("TEXT");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
 
                     b.Property<string>("Categoria")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Nome")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<double?>("Valor")
+                    b.Property<double>("Valor")
                         .HasColumnType("REAL");
 
                     b.HasKey("Id");

@@ -14,10 +14,11 @@ namespace EletronicosAPI.Migrations
                 name: "Eletronicos",
                 columns: table => new
                 {
-                    Id = table.Column<string>(type: "TEXT", nullable: false),
-                    Nome = table.Column<string>(type: "TEXT", nullable: true),
-                    Valor = table.Column<double>(type: "REAL", nullable: true),
-                    Categoria = table.Column<string>(type: "TEXT", nullable: true)
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    Nome = table.Column<string>(type: "TEXT", nullable: false),
+                    Valor = table.Column<double>(type: "REAL", nullable: false),
+                    Categoria = table.Column<string>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
                 {

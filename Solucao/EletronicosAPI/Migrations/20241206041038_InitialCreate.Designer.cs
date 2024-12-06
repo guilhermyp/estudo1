@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EletronicosAPI.Migrations
 {
     [DbContext(typeof(AppDataContext))]
-    [Migration("20241205032712_InitialCreate")]
+    [Migration("20241206041038_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -21,16 +21,19 @@ namespace EletronicosAPI.Migrations
 
             modelBuilder.Entity("EletronicosAPI.models.Eletronicos", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("TEXT");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
 
                     b.Property<string>("Categoria")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Nome")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<double?>("Valor")
+                    b.Property<double>("Valor")
                         .HasColumnType("REAL");
 
                     b.HasKey("Id");
