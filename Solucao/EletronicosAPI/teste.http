@@ -2,39 +2,55 @@
 
 
 
-
+### CADASTRAR ELETRONICO
 POST {{base_url}}/Api/eletronicos/cadastrar
 Content-Type: application/json
 
 
 {
-    "nome": "Geladeira",
-    "valor": 3500,
-    "categoria":"Eletrodomesticos"
+    "nome": "Computador",
+    "valor": 4300,
+    "categoriaId": 1    
 }
 
-###
+#### CADASTRAR CATEGORIA
+
+POST {{base_url}}/Api/eletronicos/cadastrarCategoria
+Content-Type: application/json
+
+
+{
+    "nomeCategoria": "Decoração"
+}
+
+
+### LISTAR ELETRONICO
 
 GET {{base_url}}/Api/eletronicos/listar
 
-####
+#### EDITAR ELETRONICO
 
-PUT {{base_url}}/Api/eletronicos/editar/1
+PUT {{base_url}}/Api/eletronicos/editar/4
 Content-Type: application/json
 
 {
-    "nome": "Televisão",
-    "valor": 2800.75,
-    "categoria": "Eletrônicos"
+    "nome": "Computador",
+    "valor": 4800.75,
+    "categoriaId": 1
 }
 
-####
+#### DELETAR ELETRONICO
 
-DELETE {{base_url}}/Api/eletronicos/excluir/2
-
-####
+DELETE {{base_url}}/Api/eletronicos/excluir/3
 
 
-GET {{base_url}}/Api/eletronicos/buscarPorCategoria/Lazer
+#### BUSCAR POR CATEGORIA
+
+GET {{base_url}}/Api/eletronicos/buscarPorCategoria/1
+
+
+###
+
+GET {{base_url}}/Api/eletronicos/buscarPorNome/Computador
 
 

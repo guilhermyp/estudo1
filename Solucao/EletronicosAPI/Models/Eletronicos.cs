@@ -12,7 +12,12 @@ public class Eletronicos
     
     [Required]
     public double? Valor {get; set;}
-    
-    [Required]
-    public string? Categoria {get; set;} 
+
+    public int? CategoriaId { get; set; } // Chave estrangeira
+
+    public Categoria? Categoria { get; set; } // Relacionamento
+
+    public DateTime CriadoEm { get; set; } = DateTime.Now;
+
+
 }
